@@ -1,0 +1,17 @@
+cat > .gitignore << 'EOF'
+# Python / Backend
+venv/
+__pycache__/
+*.pyc
+.env
+
+# Flutter / Mobile
+mobile/build/
+mobile/.dart_tool/
+mobile/.flutter-plugin-registrant/
+mobile/ios/Pods/
+mobile/android/.gradle/
+
+# macOS
+.DS_Store
+EOF
