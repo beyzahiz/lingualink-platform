@@ -1,9 +1,11 @@
-cat > .gitignore << 'EOF'
 # Python / Backend
-venv/
-__pycache__/
-*.pyc
-.env
+backend/venv/
+backend/__pycache__/
+backend/*.pyc
+backend/.env
+
+# Alembic cache
+backend/alembic/__pycache__/
 
 # Flutter / Mobile
 mobile/build/
@@ -11,7 +13,8 @@ mobile/.dart_tool/
 mobile/.flutter-plugin-registrant/
 mobile/ios/Pods/
 mobile/android/.gradle/
+mobile/.idea/
+mobile/*.iml
 
-# macOS
+# macOS Sistem Dosyaları
 .DS_Store
-EOF
