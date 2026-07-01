@@ -26,7 +26,6 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false, // Sağ üstteki "Debug" şeridini kaldırır
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterialDesign: true, // Modern görünüm standartlarını aktif eder
       ),
       // Uygulama ilk açıldığında ekranda ne görüneceğini "home" parametresi belirler.
       // Şimdilik test amaçlı oluşturduğumuz Giriş Ekranını çağırıyoruz.
@@ -64,7 +63,7 @@ class DummyLoginScreen extends StatelessWidget {
             ElevatedButton(
               onPressed: () {
                 // Butona basıldığında şimdilik konsola yazı yazdırıyoruz
-                print('Giriş Yap Butonuna Basıldı!');
+                debugPrint('Giriş Yap Butonuna Basıldı!');
               },
               child: const Text('Giriş Yap'),
             ),
